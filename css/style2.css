@@ -1,0 +1,201 @@
+*{
+margin:0;
+padding:0;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background: url("../img/dimension.png") no-repeat center fixed; 
+  background-size: cover; /* version standardisée */
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto; 
+}
+
+.header .navbar .logo{
+    float: left;
+    margin-top: 50px;
+}
+
+.header .navbar .menu{
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.header .navbar .menu  ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.header .navbar .menu ul li{
+    display: inline-block;
+    margin: 0 25px; 
+}
+
+.header .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.clearfix{
+   clear: both; 
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+.header .texte{
+    text-align: left;
+    color: white;
+    margin-top: 105px;
+}
+
+.header .texte h1{
+    display: inline-block;
+    padding-right: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: animate 1s ease-in-out;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    
+    20%{
+        transform: translateY(-20px);
+    }
+    
+     40%, 100%{
+        transform: translateY(0px);
+    }
+}
+
+.header .texte h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header .texte p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.header .bouton {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.header .bouton a{
+    background-color: #fed136;
+    color:black;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.header .bouton a:hover{
+    background-color: black;
+    color:#fed136;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+.footer{
+position:absolute;
+bottom:0;
+width:100%;
+padding-top:90px;
+height:100px;
+}
+
+.container_footer {
+    position: relative;
+    align-items: center;
+    width: 100%;
+} 
+
+
+.container_footer a{
+    display:inline-block; 
+    width: 45px; 
+    height: 45px;
+
+  //margin-bottom: 90px;
+  background: url(../img/socials.png); 
+}
+
+#btn-in{
+    background-position : -3px -5px;
+}
+#btn-in:hover{
+    background-position : -3px -52px;
+}
+
+.footer p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/*responsive-----------------------------------------------------------------------*/
+
+@media screen and (max-width:500px){
+    .container{width: auto; text-align: center;}
+    .header{height: auto;}
+    .header .navbar .logo{float: none; margin-right: 50px;}
+    .header .navbar .menu ul li{float: none; margin: 0 45px; }
+    
+    .header .texte {text-align: center; margin-top: 50px;}
+    .header .texte h1{font-size: 20px; text-align: center;}
+    .header .container2 .videos .itemBox {padding: 0 5px 20px;}
+    .header .texte p{font-size: 15px;text-align: center; padding-top: 20px;}
+    .header .texte h2{font-size: 18px; text-align: center;}
+    .header .bouton{ margin: 0 auto; padding-top: 40px;}
+    .header .bouton a{padding: 15px 5px; display: inline-block; justify-content: space-between; margin: 20px;}
+    
+    .footer{text-align: center;}
+    .footer p{font-size: 15px;} 
+}
+
+@media screen and (max-width:1177px){
+    .container {width: auto;}
+    .header .navbar .logo {margin-left: 50px;}
+    .header .navbar .menu {margin-right: 50px;}
+    .header .texte {margin-left: 50px; margin-right: 50px;}
+}
+
+@media screen and (max-width:715px){
+    .header .texte p{font-size: 15px;}
+    .header .texte h1 {font-size: 30px;}
+    .header .texte h2 {font-size: 17px;}
+    .header .bouton a{padding: 15px 5px; font-size: 15px;}
+}
+
+@media screen and (max-width:689px){
+    .header .texte h1 {font-size: 20px;}
+    .header .bouton{ margin: 0 auto; padding-top: 40px;}
+    .header .bouton a{padding: 15px 5px; display: inline-block; justify-content: space-between; margin: 20px;}
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Benoit Rzy</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  <link href="css/style2.css" rel="stylesheet" type="text/css"/>
+  <link href="css/normalize.css" rel="stylesheet"/>
+  
+</head>
+    
+      
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><img src="img/logo.png" width="150" alt="logo"></div>
+            
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+              </div>
+                
+        <div class="clearfix"></div>
+            </div>
+            
+             <div class="texte">
+             <h1 style="--i:1;">Quelques</h1>
+             <h1 style="--i:2;">mots</h1>
+             <h1 style="--i:3;">sur</h1>
+             <h1 style="--i:4;">moi</h1>
+             <h1 style="--i:5;">...</h1>
+                
+                <div class="paragraphe">
+                    <p>Actuellement en 2ème année de DUT MMI, je suis à la recherche d'un stage en communication.<br>Vous pouvez me contacter par email avec l'adresse suivante : <span style="color: #fed136">xbenoitrazny@gmail.com</span></p>
+                    
+                    <h2>Vous pourrez télècharger ci-dessous mon C.V. et ma Lettre de motivation</h2>
+                </div>
+            </div>
+        
+      
+        
+        <div class="bouton">
+        <a href="pdf/cv.pdf" id="pwd" onclick="return checkPassword();" target="_blank">Télècharger mon C.V.</a>
+        <a href="pdf/lettre_de_motivation.pdf" id="pwd" onclick="return checkPassword();" target="_blank">Télècharger ma Lettre de motivation</a>   
+        </div>
+
+        </div>
+        
+
+    
+ <footer class="footer">   
+     <div class="container_footer">
+         
+            <center><a id="btn-in" href="https://www.linkedin.com/in/benoit-r-a82a101b6/" target="_blank"></a></center>
+            <p> Site réalisé par Benoit Rzy<br/>©2020 BR - All right reserved</p>
+
+     </div>     
+</footer>  
+ 
+    </div> 
+
+    <script language="JavaScript">
+        function checkPassword(){
+            var password = document.getElementById("pwd");
+            var passwordText = password.value;
+
+            passwordText = prompt('Entrer mot de passe');
+
+            if (passwordText == "mmi"){
+                return true;
+                
+            }else{
+                
+                alert("Mot de passe incorrect");
+                return false;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

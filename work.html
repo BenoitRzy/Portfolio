@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Benoit Rzy</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  <link href="css/style3.css" rel="stylesheet" type="text/css"/>
+  <link href="css/normalize.css" rel="stylesheet"/>
+    
+  
+</head>
+    
+      
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><img src="img/logo.png" width="150" alt="logo"></div>
+            
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+              </div>
+                
+                <div class="clearfix"></div>
+              </div>
+            
+            <div class="texte">
+             <h1><span>Mes créations</span></h1>
+            </div>
+            
+            
+            
+            <section class="container2">
+            <div class="filtre">
+                <ul>
+                        <li class="list active" data-filter="all">All</li>
+                        <li class="list" data-filter="video">Videos</li>
+                        <li class="list" data-filter="image">Images</li>
+                </ul>          
+            </div>
+                
+                
+
+            <div class="videos">
+                <div class="itemBox video">
+
+                         <div class="containeur">
+                              <div class="overlay overlaytop">
+                                    <div class="text">Logo 3D - Projet Tutoré 1ère année DUT MMI</div>
+                              </div>     
+                         
+                                    <video controls="contols" width="500" autoplay loop muted>
+                                    <source src="video/3d_logo_blanc.mp4" class="itemBox video">  
+                                    </video>
+                         
+                          </div>
+                               
+
+                    
+                            <div class="containeur">
+                                <div class="overlay overlaytop">
+                                        <div class="text">Logo 3D - Projet Tutoré 1ère année DUT MMI</div>
+                                </div>     
+                    
+                                    <video controls="contols" width="500" autoplay loop muted>
+                                    <source src="video/3d_logo_noir.mp4"  class="itemBox video">
+                                    </video>   
+                            </div>
+                    
+                    
+                </div>
+            </div>
+                
+
+                
+                <div class="images">
+                <div class="itemBox image"><img class="zoom zoom-tmp" src="img/banni%C3%A8re%20linkedin%20Vweb%20designer.jpg"></div>
+                    
+                      <template id="zoom-template">
+                        <div id="zoom-template-wrapper">
+                        <h2>Bannière Linkedin</h2>
+                        </div>
+                     </template>
+                </div>
+            
+                
+            </section> 
+            </div>
+        </div> 
+                
+      <!--      
+ <footer class="footer">   
+     <div class="container_footer">
+         
+            <center><a id="btn-in" href="https://www.linkedin.com/in/benoit-r-a82a101b6/" target="_blank"></a></center>
+             
+            <p> Site réalisé par Benoit Rzy<br/>©2020 BR - All right reserved</p>
+
+     </div>     
+  </footer>  
+ -->
+
+        
+    <script src="js/medium-zoom.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+       
+        
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value=='all'){
+                    $('.itemBox').show('1000');
+                }
+                
+                else{
+                     $('.itemBox').not('.'+value).hide('1000');
+                     $('.itemBox').filter('.'+value).show('1000');
+                }
+            })
+            
+            
+            
+            $('.list').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+        
+        
+    </script>
+        
+        
+</body>
+</html>
