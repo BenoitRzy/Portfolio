@@ -336,7 +336,7 @@ height:100px;
 
 @media screen and (max-width:1020px) and (min-width:501px){
     .container {width: auto;}
-    .header{height: 113%; position: absolute;}
+    .header{height: 113%; position: absolute; overflow-x: hidden;}
     .header .texte h1{letter-spacing: 40px;}
     .header .container2 .filtre ul{padding-bottom: 15px;}
     .header .container2 .videos{text-align: center;}
