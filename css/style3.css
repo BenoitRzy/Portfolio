@@ -289,7 +289,7 @@ height:100px;
 
 @media screen and (max-width:500px){
     .container{width: auto; text-align: center;}
-    .header{height: 113%; position: absolute;}
+    .header{height: 113%; position: absolute; overflow-x: hidden;}
     .header .navbar .logo{float: none;}
     .header .navbar .menu{margin-top: 30px; margin-bottom: 10px;}
     .header .navbar .menu ul li{float: none; margin: 0 55px;}
